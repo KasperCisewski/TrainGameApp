@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>TrainQuiz_BackEnd</RootNamespace>
+    <UserSecretsId>08b97d4f-97f3-4802-a6ec-5fe3de4bc1ad</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20190914125430_InitialMigration.cs" />
+    <Compile Remove="Migrations\20190914125430_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20190914125658_InitialMigration.cs" />
+    <Compile Remove="Migrations\20190914125658_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20190914181713_ActualUpdate.cs" />
+    <Compile Remove="Migrations\20190914181713_ActualUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190914201413_UpdateTables.cs" />
+    <Compile Remove="Migrations\20190914201413_UpdateTables.Designer.cs" />
+    <Compile Remove="Migrations\20190914203825_AppRefactor.cs" />
+    <Compile Remove="Migrations\20190914203825_AppRefactor.Designer.cs" />
+    <Compile Remove="Migrations\20190915024233_UpdateDb1.cs" />
+    <Compile Remove="Migrations\20190915024233_UpdateDb1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Enums\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+</Project>
